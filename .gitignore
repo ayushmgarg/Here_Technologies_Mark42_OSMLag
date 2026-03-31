@@ -1,0 +1,72 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+demo.png
+ProblemStatement.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+build_err.log
+build_out.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data dumps and heavy geospatial files
+Data/
+*.gpkg
+malaysia-singapore-brunei.gpkg
+
+# Generated data files (run build_stats.py to regenerate)
+osm-verifier/sg_nodes.json
+osm-verifier/heatmap.json
+osm-verifier/gov_data.sqlite
+
+# Runtime SQLite caches
+osm-verifier/cache.db
+osm-verifier/contradictions/live_contradictions.json
+
+# Optional generated stats
+sg_stats.json
+
+# Docker build artefacts
+build_out.log
+build_err.log
+layers.txt
+
+# Redundant/draft documentation (keep README.md only)
+DATABASE_AND_STORAGE.md
+DEMO_FLOW.md
+DIAGNOSTIC_REPORT.md
+FIXES_SUMMARY.md
+JUDGE_ARCHITECTURE_BRIEF.md
+QUICK_REFERENCE.md
+STATUS_DASHBOARD.md
+db_setup_guide.md
+osm-verifier/server.log
+osm-verifier/server_err.log
